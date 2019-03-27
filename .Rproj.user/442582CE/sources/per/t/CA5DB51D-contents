@@ -1,0 +1,94 @@
+---
+title: '2019-03-20'
+author: ""
+date: "3/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#?????
+```{r}
+dialogue <- 
+c('小明說："明天不用上課。"',
+               '小花說："真的嗎？"')
+
+cat(dialogue, sep="\n")
+```
+#?????
+```{r}
+dialogue <- c("小明說：'明天不用上課。'",
+               "小花說：'真的嗎？'")
+
+cat(dialogue, sep="\n")
+```
+#Logical
+將True儲存為0，將False儲存為1
+```{r}
+boolean <- c(T,TRUE,F,FALSE)
+class(boolean)
+```
+
+```{r}
+sum(boolean)
+```
+#Factor
+雖然我給你字串，但別把它當作字串，他是類別
+```{r}
+studentMajors <- factor(c("經濟系","統計系"))
+```
+
+```{r}
+class(studentMajors)
+```
+```{r}
+studentMajors0 <- c("經濟系","統計系")
+```
+#typeof可以看到R語言是怎麼儲存牠的
+```{r}
+typeof(studentMajors)
+```
+
+```{r}
+typeof(studentMajors0)
+```
+
+```{r}
+as.integer(studentMajors)
+```
+
+```{r}
+birthDate <- factor(c("台北市","台中市","台北市","台中市","台北市"))
+```
+
+```{r}
+class(birthDate)
+```
+#as.integer(要轉換的變數名稱)
+as.char(要轉換的變數名稱))
+```{r}
+as.integer(birthDate)
+```
+
+```{r}
+num <- factor(c(410677091))
+```
+
+```{r}
+class(num)
+```
+
+```{r}
+typeof(num)
+```
+
+```{r}
+char_num <- as.character(num)
+```
+
+```{r}
+char_num
+```
+
+
